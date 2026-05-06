@@ -50,7 +50,7 @@ if not df.empty:
         status_color = "normal" if current_rate > (avg_rate * 0.5) else "inverse"
         st.metric("Current Conv Rate", f"{current_rate:.2f}%", delta=f"{current_rate - avg_rate:.2f}%", delta_color=status_color)
 
-    st.line_chart(df.set_index('date')['conv_rate'])
+    st.line_chart(df['conv_rate'])
 
     # 5. AGENTIC LOGIC (The "Crisis" Trigger)
     if current_rate < (avg_rate * 0.5):
