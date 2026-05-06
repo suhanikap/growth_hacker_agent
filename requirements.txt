@@ -1,0 +1,5 @@
+streamlit
+pandas
+ollama
+# If using Google Sheets, add:
+# streamlit-gsheets-connection
