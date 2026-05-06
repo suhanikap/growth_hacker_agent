@@ -79,4 +79,4 @@ if latest_rate < (avg_rate * 0.5):
             except Exception as e:
                 st.error(f"Hardware Error: {e}. Ensure Ollama is running and model is pulled.")
 else:
-    st.success("✅ System is performing within normal
+     st.success("✅ System is performing within normal parameters.")
